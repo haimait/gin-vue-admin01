@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"gin-vue-admin/core"
 	"gin-vue-admin/global"
 	"gin-vue-admin/initialize"
@@ -28,4 +29,7 @@ func main() {
 	defer global.GVA_DB.Close()
 
 	core.RunWindowsServer()
+}
+func test()  {
+	fmt.Println(test)
 }
